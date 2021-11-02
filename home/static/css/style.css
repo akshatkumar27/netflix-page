@@ -1,0 +1,232 @@
+/* {% load static %} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  .container .head{
+    /* background-color: rgb(58, 56, 56); */
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px ;
+    margin-top: 20px;
+    z-index:100000;
+
+  }
+
+  .container .head a {
+    color:#fff;
+    text-decoration: none;
+    background-color: #e50914;
+    padding:8px 18px;
+    border-radius: 5px;
+  }
+
+   
+  .container .head img{
+    width:13%;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .banner .box{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 1000;
+  } 
+
+  .banner:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 400px;
+    z-index:1;
+    background-image: linear-gradient(to bottom,#000,transparent);
+  }
+  .banner:after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 400px;
+    z-index:1;
+    background-image: linear-gradient(to top,#000,transparent);
+  }
+  .banner .fit{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+  }
+  .banner .box .heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner .box .heading h2{
+    font-size: 3.125rem;
+    color:#fff;
+    letter-spacing: 2px;
+    width:80%;
+  }
+  .banner .box .heading h5{
+    font-size:1.625rem;
+    color:#fff;
+    font-weight: 400;
+    padding: 1rem 0;
+  }
+
+  .banner .box .heading p{
+    font-size:1.2rem;
+    color:#fff;
+    font-weight: 400;
+    padding: 15px 0;
+    padding-bottom: 20px;
+  }
+
+  .banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .box .search input {
+    font-size: 16px;
+    border:1px solid#8c8c8c;
+    outline:none;
+    color:#000;
+    border-radius:2px;
+    padding:10px 10px 0 0;
+    min-width: 400px;
+    height:60px;
+    align-items: center;
+  }
+  .banner .box .search a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    /* responsive nature */
+    font-size:1.625em ;
+    line-height:60px;
+    min-width: 310px;
+    padding:0 30px;
+
+  }
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.wrapper .bg{
+  width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+  .wrapper::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 400px;
+    z-index:1;
+    background-image: linear-gradient(to bottom,#000,transparent);
+  }
+  .wrapper::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 400px;
+    z-index:1;
+    background-image: linear-gradient(to top,#000,transparent);
+    
+  }
+  
+.login_body{
+background-color: rgb(39, 39, 39);
+padding:60px;
+z-index:900;
+max-width: 630px;
+border-radius: 10px;
+position:absolute;
+top:55%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.login_box h2{
+  font-size: 32px;
+  color: #fff;
+}
+
+.login_box .input_wrap{
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  margin-top: 20px;
+}
+.input_wrap{
+  margin-bottom: 25px;
+}
+
+.login_box button{
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  background-color: red;
+  border-radius: 3px;
+  font-weight: 16px;
+  font-size: 16px;
+}
+.login_box .ult{
+  color: aqua;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
